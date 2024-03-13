@@ -1,5 +1,4 @@
 
-Claro! Aqui está um exemplo de README que você pode adicionar ao seu repositório no GitHub para explicar as adições feitas ao modelo de banco de dados do e-commerce:
 
 Modelo Conceitual de Banco de Dados para E-commerce Refinado
 Este repositório contém um modelo conceitual de banco de dados para um sistema de e-commerce, que foi refinado com base em requisitos específicos do projeto. As adições incluem a introdução de entidades para representar clientes Pessoa Jurídica (PJ) e Pessoa Física (PF), múltiplas formas de pagamento e informações de entrega expandidas.
