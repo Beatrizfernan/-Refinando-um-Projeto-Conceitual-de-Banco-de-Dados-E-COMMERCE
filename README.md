@@ -1,19 +1,20 @@
+Este repositório apresenta um modelo conceitual de banco de dados aprimorado para um sistema de e-commerce. O modelo foi refinado com base em requisitos específicos do projeto, incorporando adições significativas para melhor representar a estrutura e funcionalidades do sistema.
 
+**Alterações Realizadas**
 
-Modelo Conceitual de Banco de Dados para E-commerce Refinado
-Este repositório contém um modelo conceitual de banco de dados para um sistema de e-commerce, que foi refinado com base em requisitos específicos do projeto. As adições incluem a introdução de entidades para representar clientes Pessoa Jurídica (PJ) e Pessoa Física (PF), múltiplas formas de pagamento e informações de entrega expandidas.
+**Entidades Adicionadas:**
 
-Alterações Realizadas
-Entidades Adicionadas:
-ClientePJ e ClientePF: Representam clientes registrados no sistema, distinguindo entre Pessoa Jurídica e Pessoa Física. Uma conta de cliente pode ser associada apenas a um tipo de cliente (PJ ou PF), mas não ambos.
+- **ClientePJ e ClientePF:** Foram introduzidas entidades distintas para representar clientes, diferenciando entre Pessoa Jurídica e Pessoa Física. Agora, uma conta de cliente pode ser associada exclusivamente a um tipo de cliente (PJ ou PF), proporcionando uma representação mais precisa e flexível dos usuários do sistema.
+- **Pagamento:** Uma nova entidade foi introduzida para abranger as diversas formas de pagamento disponíveis para os clientes. Agora, um cliente pode cadastrar múltiplos métodos de pagamento, aumentando a praticidade e adaptabilidade do sistema às preferências dos usuários.
+- **Entrega:** Esta entidade foi expandida para incluir informações abrangentes relacionadas à entrega de pedidos, como status e código de rastreamento. Isso permite um controle mais detalhado e eficiente do processo de entrega, aprimorando a experiência do cliente.
 
-Pagamento: Representa as diferentes formas de pagamento disponíveis para os clientes. Um cliente pode ter cadastrado mais de uma forma de pagamento.
+**Relacionamentos Adicionados:**
 
-Entrega: Representa informações relacionadas à entrega de pedidos, incluindo status e código de rastreamento.
+- **Cliente-Pagamento:** Foi estabelecido um relacionamento muitos-para-muitos entre clientes e formas de pagamento. Agora, um cliente pode associar múltiplos métodos de pagamento à sua conta, proporcionando maior conveniência e flexibilidade nas transações.
+- **Pedido-Entrega:** Foi implementado um relacionamento um-para-um entre pedidos e informações de entrega. Isso significa que cada pedido pode agora ter informações específicas de entrega associadas, facilitando o rastreamento e gerenciamento dos pedidos pelo sistema.
 
-Relacionamentos Adicionados:
-Cliente-Pagamento: Relacionamento muitos-para-muitos entre cliente e formas de pagamento, permitindo que um cliente tenha múltiplas formas de pagamento cadastradas.
+**Diagrama de Banco de Dados**
 
-Pedido-Entrega: Relacionamento um-para-um entre pedido e informações de entrega, permitindo que cada pedido tenha informações específicas de entrega associadas.
+Um diagrama visual do banco de dados atualizado está disponível ,fornecendo uma visão geral clara da estrutura e relacionamentos entre as entidades no sistema de e-commerce.
 
-Diagrama de Banco de Dados At
+Estas adições e refinamentos visam melhorar a eficiência, flexibilidade e usabilidade do modelo de banco de dados, contribuindo para um sistema de e-commerce mais robusto e capaz de atender às necessidades dos clientes e administradores.
